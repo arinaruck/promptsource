@@ -7,10 +7,12 @@ templates:
     jinja: Supposons que {{premise}} Pouvons-nous déduire que &quot;{{hypothesis}}&quot; ?
       Oui, non, ou peut-être ? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_frmt
     reference: ''
   28cc3c2d-a9d1-4bb8-b9a0-52e9df17751d: !Template
@@ -20,10 +22,12 @@ templates:
       est {{"guaranteed"}}, {{"possible"}} ou {{"impossible"}} ? ||| {{ answer_choices[label]
       }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_frmt
     reference: ''
   37d2f761-06b0-4aa3-af53-871a2b06748f: !Template
@@ -50,10 +54,12 @@ templates:
       vous savez sur le monde, &quot;{{hypothesis}}&quot; est définitivement correcte,
       incorrecte ou non concluante ? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_frmt
     reference: ''
   96a70043-d49a-4cd3-b235-a3c8a3a985fd: !Template
@@ -62,10 +68,12 @@ templates:
     jinja: '{{premise}} Sommes-nous justifiés de dire que &quot;{{hypothesis}}&quot; ?
       Oui, non, ou peut-être ? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_frmt
     reference: ''
   9b75ff67-bb62-413b-a33d-325707b035d7: !Template
@@ -134,9 +142,11 @@ templates:
     jinja: '{{premise}} Question : {{hypothesis}} Vrai, faux ou ni l&#39;un ni l&#39;autre ?
       ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_frmt
     reference: ''

@@ -8,10 +8,12 @@ templates:
       उपयोग करते हुए, &quot;{{hypothesis}}&quot; निश्चित रूप से सही, गलत या अनिर्णायक
       है? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - hi
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_himt
     reference: ''
   31ed3aca-e0c1-4ebb-a2a2-4d3063e72144: !Template
@@ -20,10 +22,12 @@ templates:
     jinja: '{{premise}} क्या यह कहना उचित है कि &quot;{{hypothesis}}&quot;? हाँ, नहीं,
       या शायद? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - hi
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_himt
     reference: ''
   37d2f061-06c0-4aa3-af53-871a2b06748f: !Template
@@ -49,10 +53,12 @@ templates:
     jinja: मान लीजिए {{premise}} क्या हम उस &quot;{{hypothesis}}&quot; का अनुमान लगा
       सकते हैं? हाँ, नहीं, या शायद? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - hi
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_himt
     reference: ''
   83bdae91-8a37-4575-a63f-b5f998e861df: !Template
@@ -61,10 +67,12 @@ templates:
     jinja: मान लें कि यह सच है कि {{premise}} इसलिए, &quot;{{hypothesis}}&quot; {{"guaranteed"}},
       {{"possible"}}, या {{"impossible"}} है? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - hi
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_himt
     reference: ''
   9b75ff67-bb46-413b-a33d-325707b035d7: !Template
@@ -101,10 +109,12 @@ templates:
     jinja: '{{premise}} प्रश्न: {{hypothesis}} सत्य, असत्य, या नहीं? ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - hi
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_himt
     reference: ''
   d44c2947-f8e0-55ea-9770-e59f0581a921: !Template

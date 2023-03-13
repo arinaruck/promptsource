@@ -36,10 +36,12 @@ templates:
     jinja: افترض {{premise}} هل يمكننا استنتاج أن &quot;{{hypothesis}}&quot;؟ نعم
       ، لا ، أو ربما؟ ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - ar
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_armt
     reference: ''
   8b75ff67-bb66-413b-a33d-325707b035d7: !Template
@@ -77,10 +79,12 @@ templates:
     jinja: '{{premise}} استخدام الوصف أعلاه وما تعرفه عن العالم ، &quot;{{hypothesis}}&quot;
       هو بالتأكيد صحيح أم غير صحيح أم غير حاسم؟ ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - ar
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_armt
     reference: ''
   97d2f061-06b0-4aa3-af53-871a2b06748f: !Template
@@ -104,10 +108,12 @@ templates:
     jinja: '{{premise}} سؤال: {{hypothesis}} صواب أم خطأ أم لا؟ ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - ar
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_armt
     reference: ''
   b1c0d748-3969-4df6-9836-59c23806faf2: !Template
@@ -116,10 +122,12 @@ templates:
     jinja: '{{premise}} هل يحق لنا أن نقول إن &quot;{{hypothesis}}&quot;؟ نعم ، لا
       ، أو ربما؟ ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - ar
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_armt
     reference: ''
   ba194be7-4818-4e24-b5f9-bbcccaa4e166: !Template
@@ -142,10 +150,12 @@ templates:
     jinja: افترض أنه صحيح أن {{premise}} لذلك ، &quot;{{hypothesis}}&quot; {{"guaranteed"}}
       ، {{"possible"}} ، أو {{"impossible"}}؟ ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages:
+      - ar
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_armt
     reference: ''
   e44c2947-f8e0-49ea-9770-e59f0581a921: !Template

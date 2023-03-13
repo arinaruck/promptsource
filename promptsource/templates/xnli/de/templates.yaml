@@ -8,10 +8,12 @@ templates:
       die Welt wissen, verwenden, ist "{{hypothesis}}" definitiv richtig, falsch oder
       nicht schlüssig? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - de 
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_demt
     reference: ''
   45a92641-0ab4-4225-9d8e-160606ee6e3d: !Template
@@ -20,10 +22,12 @@ templates:
     jinja: '{{premise}} Sind wir berechtigt zu sagen, dass "{{hypothesis}}"? Ja, nein,
       oder vielleicht? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - de 
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_demt
     reference: ''
   8338e809-b10a-4a38-bfa3-549948e7d5fb: !Template
@@ -34,10 +38,12 @@ templates:
       Frage: {{hypothesis}} Wahr, falsch oder keines von beiden? ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - de 
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_demt
     reference: ''
   c6db6225-f091-434e-acbf-90f0ded80883: !Template
@@ -49,10 +55,12 @@ templates:
       Daher ist "{{hypothesis}}" {{"guaranteed"}}, {{"possible"}} oder {{"impossible"}}?
       ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - de 
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_demt
     reference: ''
   f9937a08-1b2e-428b-a5b4-4108e28cc0c9: !Template
@@ -61,9 +69,11 @@ templates:
     jinja: Angenommen {{premise}} Können wir daraus schließen, dass "{{hypothesis}}"?
       Ja, nein, oder vielleicht? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - de 
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_demt
     reference: ''

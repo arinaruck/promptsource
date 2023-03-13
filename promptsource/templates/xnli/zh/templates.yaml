@@ -7,10 +7,12 @@ templates:
     jinja: '{{premise}}我们有理由说“{{hypothesis}}”吗？是的，不是的，或者也许？ ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - zh
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_zhmt
     reference: ''
   3d2950c2-93da-499b-9e84-7708027e8666: !Template
@@ -19,10 +21,12 @@ templates:
     jinja: '{{premise}} 仅使用上述描述和您对世界的了解，“{{hypothesis}}”肯定是正确的、不正确的还是不确定的？ ||| {{
       answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - zh
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_zhmt
     reference: ''
   47d2f061-06b0-4aa3-af53-871a2b06748f: !Template
@@ -47,10 +51,12 @@ templates:
     jinja: '{{premise}} 问题：{{hypothesis}} 对、错或两者都不是？ ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - zh
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_zhmt
     reference: ''
   9c75ff67-bb66-413b-a33d-325707b035d7: !Template
@@ -87,10 +93,12 @@ templates:
     jinja: 假设{{premise}}我们可以推断出“{{hypothesis}}”吗？是的，不是的，或者也许？ ||| {{ answer_choices[label]
       }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - zh
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_zhmt
     reference: ''
   e27bbe1f-7f86-4cb6-a2c1-955e020e3d72: !Template
@@ -99,10 +107,12 @@ templates:
     jinja: 假设 {{premise}} 为真，因此，“{{hypothesis}}”是 {{"guaranteed"}}、{{"possible"}}
       还是 {{"impossible"}}？ ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - zh
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_zhmt
     reference: ''
   e44c2947-f8e0-49ea-9770-e59f0581a931: !Template

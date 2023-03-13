@@ -23,10 +23,12 @@ templates:
     jinja: '{{premise}} سوال: {{hypothesis}} صحیح، غلط، یا نہ؟ ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ur
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_urmt
     reference: ''
   5d0b8303-80b2-41a8-b355-23928b181c20: !Template
@@ -35,10 +37,12 @@ templates:
     jinja: '{{premise}} کیا ہم یہ کہنا جائز ہیں کہ &quot;{{hypothesis}}&quot;؟ ہاں،
       نہیں، یا شاید؟ ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ur
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_urmt
     reference: ''
   9b75ff77-bb66-413b-a33d-325707b035d7: !Template
@@ -75,10 +79,12 @@ templates:
     jinja: فرض کریں {{premise}} کیا ہم اندازہ لگا سکتے ہیں کہ &quot;{{hypothesis}}&quot;؟
       ہاں، نہیں، یا شاید؟ ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ur
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_urmt
     reference: ''
   d374295a-c1d4-4742-82d5-290d42726ec4: !Template
@@ -88,10 +94,12 @@ templates:
       {{"guaranteed"}}، {{"possible"}}، یا {{"impossible"}} ہے؟ ||| {{ answer_choices[label]
       }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ur
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_urmt
     reference: ''
   d44c2947-f8e0-49ea-9880-e59f0581a921: !Template
@@ -131,9 +139,11 @@ templates:
       کے بارے میں جانتے ہیں، &quot;{{hypothesis}}&quot; یقینی طور پر درست، غلط، یا
       غیر نتیجہ خیز ہے؟ ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ur
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_urmt
     reference: ''

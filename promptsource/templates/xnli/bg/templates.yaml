@@ -9,10 +9,12 @@ templates:
       Въпрос: {{hypothesis}} Вярно, невярно или нито едно от двете? ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - bg 
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_bgmt
     reference: ''
   3cc01b61-d8a3-4522-aaf0-2442b144f970: !Template
@@ -21,10 +23,12 @@ templates:
     jinja: Да предположим, че {{premise}} Можем ли да заключим, че "{{hypothesis}}"?
       Да, не, или може би? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - bg 
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_bgmt
     reference: ''
   49a5a603-d96a-4e6a-ac2f-07a6265af0c8: !Template
@@ -34,10 +38,12 @@ templates:
       света, „{{hypothesis}}“ определено е правилно, неправилно или неубедително?
       ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - bg 
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_bgmt
     reference: ''
   59677618-2642-4986-ada2-f2a17e28b744: !Template
@@ -46,10 +52,12 @@ templates:
     jinja: '{{premise}} Оправдани ли сме да кажем, че „{{hypothesis}}“? Да, не, или
       може би? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - bg 
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_bgmt
     reference: ''
   9894e00d-859b-494b-806c-7aad45b11a72: !Template
@@ -61,9 +69,11 @@ templates:
       Следователно „{{hypothesis}}“ е {{"guaranteed"}}, {{"possible"}} или {{"impossible"}}?
       ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - bg 
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_bgmt
     reference: ''

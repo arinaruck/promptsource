@@ -7,10 +7,12 @@ templates:
     jinja: Ας υποθέσουμε ότι {{premise}} Μπορούμε να συμπεράνουμε ότι "{{hypothesis}}";
       Ναι, όχι, ή μήπως; ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - el 
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_elmt
     reference: ''
   3789dc3c-d422-4d7e-8826-9947c5af7d21: !Template
@@ -19,10 +21,12 @@ templates:
     jinja: '{{premise}} Είμαστε δικαιολογημένοι που λέμε ότι "{{hypothesis}}"; Ναι,
       όχι, ή μήπως; ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - el 
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_elmt
     reference: ''
   8f474851-54d1-4f0e-98f2-1f4b83bb25ec: !Template
@@ -32,10 +36,12 @@ templates:
       για τον κόσμο, το "{{hypothesis}}" είναι σίγουρα σωστό, λανθασμένο ή ασαφές;
       ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - el 
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_elmt
     reference: ''
   de3451f3-96de-4807-b73a-b840670f3a4d: !Template
@@ -47,10 +53,12 @@ templates:
       Επομένως, η "{{hypothesis}}" είναι {{"guaranteed"}}, {{"possible"}} ή {{"impossible"}};
       ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - el 
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_elmt
     reference: ''
   e52a2994-df8f-49ab-b850-03276c36b1f6: !Template
@@ -61,9 +69,11 @@ templates:
       Ερώτηση: {{hypothesis}} Σωστό, Λάθος ή κανένα από τα δύο; ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - el 
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_elmt
     reference: ''

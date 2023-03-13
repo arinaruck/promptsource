@@ -7,10 +7,12 @@ templates:
     jinja: '{{premise}} Swali: {{hypothesis}} Kweli, Si kweli au Sivyo? ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - sw
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_swmt
     reference: ''
   37d2f061-17b0-4aa3-af53-871a2b06748f: !Template
@@ -35,10 +37,12 @@ templates:
       ulimwengu, &quot;{{hypothesis}}&quot; ni sahihi, si sahihi, au si sahihi? |||
       {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - sw
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_swmt
     reference: ''
   9b75ff62-bb66-413b-a33d-325707b035d7: !Template
@@ -76,10 +80,12 @@ templates:
       ni {{"guaranteed"}}, {{"possible"}}, au {{"impossible"}}? ||| {{ answer_choices[label]
       }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - sw
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_swmt
     reference: ''
   b0170084-2a14-4e52-a459-d509b8465611: !Template
@@ -88,10 +94,12 @@ templates:
     jinja: '{{premise}} Je, tuna haki ya kusema kwamba &quot;{{hypothesis}}&quot;?
       Ndio, hapana, au labda? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - sw
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_swmt
     reference: ''
   d44c2947-f8e0-49ea-9771-e59f0581a921: !Template
@@ -130,9 +138,11 @@ templates:
     jinja: Tuseme {{premise}} Je, tunaweza kukisia kuwa &quot;{{hypothesis}}&quot;?
       Ndio, hapana, au labda? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - sw
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_swmt
     reference: ''

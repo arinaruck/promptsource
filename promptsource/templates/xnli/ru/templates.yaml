@@ -10,10 +10,12 @@ templates:
       Следовательно, "{{hypothesis}}" является {{"guaranteed"}}, {{"possible"}} или
       {{"impossible"}}? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ru
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_rumt
     reference: ''
   2858121b-f5e9-4e91-a30a-fc2c7af1c223: !Template
@@ -22,10 +24,12 @@ templates:
     jinja: Предположим, {{premise}} Можем ли мы сделать вывод, что "{{hypothesis}}"?
       Да, нет, а может быть? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ru
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_rumt
     reference: ''
   67b21e12-5fb0-4bb7-a0fd-3d2bc551d0b2: !Template
@@ -34,10 +38,12 @@ templates:
     jinja: '{{premise}} Имеем ли мы право говорить, что "{{hypothesis}}"? Да, нет,
       а может быть? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ru
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_rumt
     reference: ''
   9e093809-e6e8-4d5e-af5f-81e69412206e: !Template
@@ -47,10 +53,12 @@ templates:
       о мире, "{{hypothesis}}" определенно верна, неверна или неубедительна? ||| {{
       answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ru
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_rumt
     reference: ''
   e7aa68b6-262a-4802-b6df-04b0fdab3de8: !Template
@@ -61,9 +69,11 @@ templates:
       Вопрос: {{hypothesis}} верна, неверна или ни то, ни другое? ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - ru
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_rumt
     reference: ''

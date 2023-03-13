@@ -24,10 +24,12 @@ templates:
     jinja: Giả sử {{premise}} Chúng ta có thể suy ra rằng &quot;{{hypothesis}}&quot;
       không? Có, không, hoặc có thể? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - vi
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_vimt
     reference: ''
   9b75ff67-bb66-413b-a33d-325707b035d8: !Template
@@ -65,10 +67,12 @@ templates:
       {{"guaranteed"}}, {{"possible"}} hay {{"impossible"}}? ||| {{ answer_choices[label]
       }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - vi
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_vimt
     reference: ''
   b8c75d5c-df8f-4368-9fbd-69a7241a7266: !Template
@@ -78,10 +82,12 @@ templates:
       &quot;{{hypothesis}}&quot; chắc chắn là đúng, không chính xác hay không thể
       kết luận? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - vi
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_vimt
     reference: ''
   c4ae89df-ca0a-49eb-b5d6-e003ec6149d2: !Template
@@ -90,10 +96,12 @@ templates:
     jinja: '{{premise}} Chúng tôi có biện minh khi nói rằng &quot;{{hypothesis}}&quot;
       không? Có, không, hoặc có thể? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - vi
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_vimt
     reference: ''
   d44c2947-f8e5-49ea-9770-e59f0581a921: !Template
@@ -131,9 +139,11 @@ templates:
     jinja: '{{premise}} Câu hỏi: {{hypothesis}} Đúng, Sai hay Không? ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - vi
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_vimt
     reference: ''

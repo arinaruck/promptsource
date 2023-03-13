@@ -7,10 +7,12 @@ templates:
     jinja: '{{premise}} ¿Estamos justificados al decir que &quot;{{hypothesis}}&quot;?
       ¿Sí, no o tal vez? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - es
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_esmt
     reference: ''
   2c30be6c-52f9-4754-9848-bcb4ee7a4d88: !Template
@@ -19,10 +21,12 @@ templates:
     jinja: '{{premise}} Pregunta: {{hypothesis}} ¿Verdadero, falso o ninguno? |||
       {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - es
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_esmt
     reference: ''
   37d2f072-06b0-4aa3-af53-871a2b06748f: !Template
@@ -49,10 +53,12 @@ templates:
       mundo, &quot;{{hypothesis}}&quot; es definitivamente correcta, incorrecta o
       no concluyente. ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - es
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_esmt
     reference: ''
   9b75ff67-bb66-423b-a33d-325707b035d7: !Template
@@ -119,10 +125,12 @@ templates:
     jinja: Supongamos {{premise}} ¿Podemos inferir que &quot;{{hypothesis}}&quot;?
       ¿Sí, no o tal vez? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - es
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_esmt
     reference: ''
   f31ba22f-e7e1-44e5-9d92-6b3bbe8ad97e: !Template
@@ -132,9 +140,11 @@ templates:
       es {{"guaranteed"}}, {{"possible"}} o {{"impossible"}}. ||| {{ answer_choices[label]
       }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - es
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_esmt
     reference: ''

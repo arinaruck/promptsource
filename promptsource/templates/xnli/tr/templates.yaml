@@ -10,10 +10,12 @@ templates:
       Bu nedenle, "{{hypothesis}}" {{"guaranteed"}}, {{"possible"}} veya {{"impossible"}}
       mı? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - tr
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_trmt
     reference: ''
   84ebd457-2c6e-4723-9714-1aadcbe71ab7: !Template
@@ -22,10 +24,12 @@ templates:
     jinja: Diyelim ki {{premise}} "{{hypothesis}}" sonucuna varabilir miyiz? Evet,
       hayır, ya da belki? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - tr
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_trmt
     reference: ''
   85b26595-086d-4360-b0f0-440b080c3477: !Template
@@ -36,10 +40,12 @@ templates:
       Soru: {{hypothesis}} Doğru, Yanlış veya Hiçbiri? ||| {{ answer_choices[label]
       }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - tr
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_trmt
     reference: ''
   85e6954d-eb7d-43f3-8a93-4dd2ecf3ced2: !Template
@@ -49,10 +55,12 @@ templates:
       kullanarak, "{{hypothesis}}" kesinlikle doğru, yanlış veya sonuçsuz mu? |||
       {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - tr
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_trmt
     reference: ''
   c51efa50-efe0-4624-8145-a974bf91916e: !Template
@@ -61,9 +69,11 @@ templates:
     jinja: '{{premise}} "{{hypothesis}}" demekte haklı mıyız? Evet, hayır, ya da belki?
       ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
-      choices_in_prompt: null
-      languages: null
-      metrics: null
-      original_task: null
+      choices_in_prompt: true
+      languages: 
+      - tr
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_trmt
     reference: ''
