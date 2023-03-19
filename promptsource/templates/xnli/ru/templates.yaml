@@ -7,8 +7,8 @@ templates:
     jinja: 'Предположим, что верно, что {{premise}}
 
 
-      Следовательно, "{{hypothesis}}" является {{"guaranteed"}}, {{"possible"}} или
-      {{"impossible"}}? ||| {{ answer_choices[label] }}'
+      Следовательно, "{{hypothesis}}" является гарантированной, возможной или
+      невозможной? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages: 
