@@ -220,3 +220,16 @@ templates:
       original_task: true
     name: MNLI crowdsource
     reference: Adapted from Williams et al. 2018's instructions to crowdsourcing workers.
+#  161036e2-c397-4def-a813-4a2be119c5d7: !Template
+#    answer_choices: Yes ||| Also ||| No
+#    id: 161036e2-c397-4def-a813-4a2be119c5d7
+#    jinja: '{{premise}}, right? {{ answer_choices[label] }}, {{hypothesis}}'
+#    metadata: !TemplateMetadata
+#      choices_in_prompt: true
+#     languages:
+#      - en
+#      metrics:
+#      - Accuracy
+#      original_task: true
+#    name: right?
+#    reference: Lin et al. 2022
