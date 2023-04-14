@@ -8,7 +8,7 @@ templates:
       }}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - zh
       metrics:
       - Accuracy
@@ -22,7 +22,7 @@ templates:
       answer_choices[label] }}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - zh
       metrics:
       - Accuracy
@@ -52,13 +52,26 @@ templates:
       }}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - zh
       metrics:
       - Accuracy
       original_task: true
     name: GPT-3 style_zhmt
     reference: ''
+  8ab2f627-c651-462d-8e40-3fec1f0cd735: !Template
+    answer_choices: 是的 ||| 也是 ||| 不是
+    id: 8ab2f627-c651-462d-8e40-3fec1f0cd735
+    jinja: '{{premise}}, 对吗? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - zh
+      metrics:
+      - Accuracy
+      original_task: false
+    name: xglm right?_zhmt
+    reference: Lin et al. 2022
   9c75ff67-bb66-413b-a33d-325707b035d7: !Template
     answer_choices: 能 ||| 有可能 ||| 不能
     id: 9c75ff67-bb66-413b-a33d-325707b035d7
@@ -94,7 +107,7 @@ templates:
       }}
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - zh
       metrics:
       - Accuracy
@@ -108,7 +121,7 @@ templates:
       还是 {{"impossible"}}？ ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - zh
       metrics:
       - Accuracy

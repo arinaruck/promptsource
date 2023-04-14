@@ -7,11 +7,11 @@ templates:
     jinja: 'Предположим, что верно, что {{premise}}
 
 
-      Следовательно, "{{hypothesis}}" является гарантированной, возможной или
-      невозможной? ||| {{ answer_choices[label] }}'
+      Следовательно, "{{hypothesis}}" является гарантированной, возможной или невозможной?
+      ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - ru
       metrics:
       - Accuracy
@@ -25,7 +25,7 @@ templates:
       Да, нет, а может быть? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - ru
       metrics:
       - Accuracy
@@ -39,7 +39,7 @@ templates:
       а может быть? ||| {{ answer_choices[label] }}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - ru
       metrics:
       - Accuracy
@@ -54,7 +54,7 @@ templates:
       answer_choices[label] }}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - ru
       metrics:
       - Accuracy
@@ -70,10 +70,23 @@ templates:
       }}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
-      languages: 
+      languages:
       - ru
       metrics:
       - Accuracy
       original_task: true
     name: GPT-3 style_rumt
     reference: ''
+  ffe79bc8-0426-4d64-a80d-ecfafcf467d7: !Template
+    answer_choices: Да ||| Также ||| Нет
+    id: ffe79bc8-0426-4d64-a80d-ecfafcf467d7
+    jinja: '''{{premise}}, правда? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - ru
+      metrics:
+      - Accuracy
+      original_task: true
+    name: xglm right?_rumt
+    reference: Lin et al. 2022

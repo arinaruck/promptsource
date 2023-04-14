@@ -30,6 +30,20 @@ templates:
       original_task: true
     name: guaranteed/possible/impossible_frmt
     reference: ''
+  2bda8e36-c881-4c9a-a3a9-eec68388a6f6: !Template
+    answer_choices: Oui ||| Peut-être ||| Non
+    id: 2bda8e36-c881-4c9a-a3a9-eec68388a6f6
+    jinja: "{{premise}} \n\nPeut-on dire que « {{hypothesis}} » ? Oui, non, ou peut-être\
+      \ ? ||| {{ answer_choices[label] }} "
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: justified in saying_frht
+    reference: Webson & Pavlick 2021
   37d2f761-06b0-4aa3-af53-871a2b06748f: !Template
     answer_choices: Vrai ||| Ni l'un ni l'autre ||| Faux
     id: 37d2f761-06b0-4aa3-af53-871a2b06748f
@@ -62,6 +76,19 @@ templates:
       original_task: true
     name: MNLI crowdsource_frmt
     reference: ''
+  8395d810-99f0-4d70-a58d-48f60fe3dcf2: !Template
+    answer_choices: Si ||| Également ||| Non
+    id: 8395d810-99f0-4d70-a58d-48f60fe3dcf2
+    jinja: '{{premise}}, non? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: xglm right?_frmt
+    reference: Lin et al. 2022
   96a70043-d49a-4cd3-b235-a3c8a3a985fd: !Template
     answer_choices: Oui ||| Peut-être ||| Non
     id: 96a70043-d49a-4cd3-b235-a3c8a3a985fd
@@ -89,20 +116,6 @@ templates:
       - Accuracy
       original_task: true
     name: can we infer_frht
-    reference: Webson & Pavlick 2021
-  2bda8e36-c881-4c9a-a3a9-eec68388a6f6: !Template
-    answer_choices: Oui ||| Peut-être ||| Non
-    id: 2bda8e36-c881-4c9a-a3a9-eec68388a6f6
-    jinja: "{{premise}} \n\nPeut-on dire que « {{hypothesis}} » ? Oui, non, ou peut-être\
-      \ ? ||| {{ answer_choices[label] }} "
-    metadata: !TemplateMetadata
-      choices_in_prompt: true
-      languages:
-      - fr
-      metrics:
-      - Accuracy
-      original_task: true
-    name: justified in saying_frht
     reference: Webson & Pavlick 2021
   d44c2947-f8e0-49ea-9770-e59f0581a966: !Template
     answer_choices: Garanti ||| Possible ||| Impossible

@@ -75,7 +75,7 @@ templates:
       - Accuracy
       original_task: true
     name: based on the previous passage
-    reference: "Adapted from the BoolQ prompts in Schick & Sch\xFCtze 2021."
+    reference: Adapted from the BoolQ prompts in Schick & Schütze 2021.
   833c65a6-6068-4e00-9833-944cf7510544: !Template
     answer_choices: Yes ||| Maybe ||| No
     id: 833c65a6-6068-4e00-9833-944cf7510544
@@ -220,16 +220,16 @@ templates:
       original_task: true
     name: MNLI crowdsource
     reference: Adapted from Williams et al. 2018's instructions to crowdsourcing workers.
-#  161036e2-c397-4def-a813-4a2be119c5d7: !Template
-#    answer_choices: Yes ||| Also ||| No
-#    id: 161036e2-c397-4def-a813-4a2be119c5d7
-#    jinja: '{{premise}}, right? {{ answer_choices[label] }}, {{hypothesis}}'
-#    metadata: !TemplateMetadata
-#      choices_in_prompt: true
-#     languages:
-#      - en
-#      metrics:
-#      - Accuracy
-#      original_task: true
-#    name: right?
-#    reference: Lin et al. 2022
+  f95298ce-1e5d-4cb0-beae-a5655db59dbd: !Template
+    answer_choices: Yes ||| Also ||| No
+    id: f95298ce-1e5d-4cb0-beae-a5655db59dbd
+    jinja: '{{premise}}, right? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: xglm right?
+    reference: Lin et al. 2022
