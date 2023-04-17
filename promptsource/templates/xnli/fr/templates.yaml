@@ -77,7 +77,7 @@ templates:
     name: MNLI crowdsource_frmt
     reference: ''
   8395d810-99f0-4d70-a58d-48f60fe3dcf2: !Template
-    answer_choices: Si ||| Également ||| Non
+    answer_choices: Oui ||| Également ||| Non
     id: 8395d810-99f0-4d70-a58d-48f60fe3dcf2
     jinja: '{{premise}}, non? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
     metadata: !TemplateMetadata
