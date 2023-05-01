@@ -72,6 +72,19 @@ templates:
       original_task: false
     name: xglm right?_zhmt
     reference: Lin et al. 2022
+  8ab2f627-c651-462d-8e40-3fec1f0cd736: !Template
+    answer_choices: 对 ||| 也许 ||| 不对
+    id: 8ab2f627-c651-462d-8e40-3fec1f0cd735
+    jinja: '{{premise}}, 对吗? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - zh
+      metrics:
+      - Accuracy
+      original_task: false
+    name: jes_xglm right?_zhht
+    reference: Lin et al. 2022
   9c75ff67-bb66-413b-a33d-325707b035d7: !Template
     answer_choices: 能 ||| 有可能 ||| 不能
     id: 9c75ff67-bb66-413b-a33d-325707b035d7
@@ -80,7 +93,7 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
-      - en
+      - zh
       metrics:
       - Accuracy
       original_task: true
@@ -94,7 +107,7 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
-      - en
+      - zh
       metrics:
       - Accuracy
       original_task: true
@@ -114,6 +127,19 @@ templates:
       original_task: true
     name: can we infer_zhmt
     reference: ''
+  ca32f75f-b45e-4b47-9b42-8523121c44eb: !Template
+    answer_choices: 对 ||| 也许 ||| 不对
+    id: ca32f75f-b45e-4b47-9b42-8523121c44eb
+    jinja: '{{premise}}, 对吗? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - zh
+      metrics:
+      - Accuracy
+      original_task: true
+    name: xglm_right?_zhht
+    reference: Lin et al. 2022
   e27bbe1f-7f86-4cb6-a2c1-955e020e3d72: !Template
     answer_choices: 保证 ||| 可能的 ||| 不可能的
     id: e27bbe1f-7f86-4cb6-a2c1-955e020e3d72

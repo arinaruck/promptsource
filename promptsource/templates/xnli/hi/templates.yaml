@@ -83,7 +83,7 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
-      - en
+      - hi
       metrics:
       - Accuracy
       original_task: true
@@ -97,7 +97,7 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
-      - en
+      - hi
       metrics:
       - Accuracy
       original_task: true
@@ -126,7 +126,7 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
-      - en
+      - hi
       metrics:
       - Accuracy
       original_task: true
@@ -147,3 +147,17 @@ templates:
       original_task: true
     name: MNLI crowdsource_hiht
     reference: Adapted from Williams et al. 2018's instructions to crowdsourcing workers.
+
+  f95298ce-1e5d-4cb0-beae-a5655db59dbd: !Template
+    answer_choices: हाँ ||| इसके आलावा ||| नहीं
+    id: f95298ce-1e5d-4cb0-beae-a5655db59dbd
+    jinja: '{{premise}}, है ना? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - hi
+      metrics:
+      - Accuracy
+      original_task: true
+    name: xglm right?_himt
+    reference: Lin et al. 2022
