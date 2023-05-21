@@ -51,8 +51,7 @@ templates:
   5350f9f1-61bb-43a3-9471-17db720f12bc: !Template
     answer_choices: Yes ||| Maybe ||| No
     id: 5350f9f1-61bb-43a3-9471-17db720f12bc
-    jinja: Given that {{premise}} Does it follow that {{hypothesis}} Yes, no, or maybe?
-      ||| {{ answer_choices[label] }}
+    jinja: Given that {{premise}} Does it follow that {{hypothesis}} Yes, no, or maybe? ||| {{ answer_choices[label] }}
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -233,3 +232,16 @@ templates:
       original_task: true
     name: xglm right?
     reference: Lin et al. 2022
+  fd6a3321-3cc6-47ad-8652-c09a0aa3a70d: !Template
+    answer_choices: Yes ||| I don't know, but ||| No
+    id: fd6a3321-3cc6-47ad-8652-c09a0aa3a70d
+    jinja: '{{premise}}, right? {}, {{hypothesis}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: xglm modified verbalizer
+    reference: ''

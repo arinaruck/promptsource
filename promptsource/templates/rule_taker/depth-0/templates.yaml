@@ -1,0 +1,55 @@
+dataset: rule_taker
+subset: depth-0
+templates:
+  ca32f75f-b45e-4b47-9b42-8523121c44ea: !Template
+    answer_choices: No ||| Yes
+    id: ca32f75f-b45e-4b47-9b42-8523121c44ea
+    jinja: '{{question}}, right? {}, {{context}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: xglm right?
+    reference: Lin et al. 2022
+  aс32f75f-b45e-4b47-9b42-8523121c44ae: !Template
+    answer_choices: No ||| Yes
+    id: aс32f75f-b45e-4b47-9b42-8523121c44ae
+    jinja: '{{context}}, right? {}, {{question}} ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: inverted xglm right?
+    reference: Lin et al. 2022
+  5350f9f1-61bb-43a3-9471-17db720f12bc: !Template
+    answer_choices: No ||| Yes
+    id: 5350f9f1-61bb-43a3-9471-17db720f12bc
+    jinja: Given that {{context}} Does it follow that {{question}} Yes or no? ||| {{ answer_choices[label] }}
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: does it follow that
+    reference: Sanh et al. 2021
+  161036e2-c397-4def-a813-4a2be119c5d6: !Template
+    answer_choices: True ||| False
+    id: 161036e2-c397-4def-a813-4a2be119c5d6
+    jinja: 'Take the following as truth: {{context}}. Then the following statement: "{{question}}" is {{"true"}} or {{"false"}}? ||| {{ answer_choices[label] }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: take the following as truth
+    reference: Sanh et al. 2021

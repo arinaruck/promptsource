@@ -150,8 +150,7 @@ templates:
     answer_choices: garantizado ||| Posible ||| Imposible
     id: f31ba22f-e7e1-44e5-9d92-6b3bbe8ad97e
     jinja: Supongamos que es cierto que {{premise}} Por lo tanto, &quot;{{hypothesis}}&quot;
-      es {{"guaranteed"}}, {{"possible"}} o {{"impossible"}}. ||| {{ answer_choices[label]
-      }}
+      es {{"guaranteed"}}, {{"possible"}} o {{"impossible"}}. ||| {{ answer_choices[label]}}
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
